@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1280">  
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>LastCloudia-KR-CheckList</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function(){ fncRenderHtml(); }); </script>
+</head>
+<body style="background-color: black;">
+    <div id="header">
+        <div>
+            <p class="brancht">LastCloudia KR CheckList</p>                        
+            <p>Created by 반갑다친구야</p>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#unit">캐릭터</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#ark">아크</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#entire">전체</a>
+                </li>
+            </ul>                                
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="tab-content">
+            <div class="tab-pane fade p-2" id="unit">
+                <button class="btn btn-light mb-2 ml-2" onclick="fncAllSelect('unit')">전체 선택</button>
+                <button class="btn btn-light mb-2 ml-2" onclick="fncReset('unit')">초기화</button>
+                <div style="margin-bottom: 10px;">
+                    <p style="margin-left: 15px;"> 
+                        <span id="currunit">0</span>
+                        <span> / </span>
+                        <span id="maxUnit"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade p-2" id="ark">
+                <button class="btn btn-light mb-2 ml-2" onclick="fncAllSelect('ark')">전체 선택</button>
+                <button class="btn btn-light mb-2 ml-2" onclick="fncReset('ark')">초기화</button>
+                <div style="margin-bottom: 10px;">                    
+                    <p style="margin-left: 15px;"> 
+                        <span id="currark">0</span>
+                        <span> / </span>
+                        <span id="maxArk"></span>
+                    </p>
+                </div>    
+            </div>
+            <div class="tab-pane fade p-2 show active" id="entire">
+                <button class="btn btn-light mb-2 ml-4" onclick="fncAllSelect('entire')">전체 선택</button>
+                <button class="btn btn-light mb-2 ml-2" onclick="fncReset('entire')">초기화</button>
+                <button class="btn btn-light mb-2 ml-2" onclick="fncDownload('scDiv')">다운로드</button>
+                <div id="scDiv">
+                    <p> 
+                        <span id="currentire">0</span>
+                        <span> / </span>
+                        <span id="maxEntire"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}        
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    height: 5%;
+}
+#wrapper{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 90%;        
+}
+#wrapper > div{
+    height: 100%;
+    width: 60%;
+    padding: 30px;
+}
+img{
+    width: 56px;
+    height: 56px;
+    margin: 1px;
+}
+img:not(.iactive){
+    opacity: 0.3;
+}
+.unit{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#scDiv{ 
+    background-color: black; 
+    padding: 10px 0px 10px 28px;
+    border: 2px solid white;
+}
+.brancht{ 
+    font-size: 25px; 
+    font-weight: bolder; 
+}
+.pst{
+    margin: 5px 0px 0px 3px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+h2, h3, p, span, a{ color: white; }
+a, span{font-size: 20px;}
