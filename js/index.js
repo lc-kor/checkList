@@ -1,7 +1,7 @@
 const stroyUnitCnt = 5;
 const eventUnitCnt = 1;
 const nomalUnitCnt = 23;
-const limitUnitCnt = 6;
+const limitUnitCnt = 7;
 const seasonalUnitCnt = 1;
 const collabUnitCnt = 3;
 const monsterCnt = 10;;
@@ -13,7 +13,7 @@ const srArkCnt = 22;
 const srlArkCnt = 0;
 const srcArkCnt = 1;
 const srArkTcnt = srcArkCnt + srlArkCnt + srArkCnt;
-const ssrArkCnt = 26;
+const ssrArkCnt = 27;
 const ssrlArkCnt = 1;
 const ssrcArkCnt = 2;
 const ssrArkTCnt = ssrArkCnt + ssrcArkCnt + ssrlArkCnt;
