@@ -152,7 +152,7 @@ function fncAllSelect(type){
     let saveType = type == "entire" ?  "scDiv" : type;            
     document.querySelector("#curr" + type).innerHTML = (saveType === "unit" ? maxUnitCnt :  saveType === "ark" ? maxArkCnt : maxUnitCnt + maxArkCnt);
     document.querySelectorAll("#" +  type + " img").forEach(function(item){ item.style.opacity = 1 }); 
-    document.querySelectorAll("#" + saveType + " img").forEach(function(e){ console.log(e.id); localStorage.setItem(e.id, ""); })
+    document.querySelectorAll("#" + saveType + " img").forEach(function(e){ localStorage.setItem(e.id, ""); })
     return false;
 }
 function fncReset(type){
